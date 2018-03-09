@@ -15,3 +15,79 @@ $sub-gold : #887f69;
 $background-daken : #e2ddd4;
 $key-silver : #b0b0b0;
 $key-red : #9d1a2d;
+
+
+header {
+  background: $background;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  
+  .menu_and_icon {
+    img {
+      padding: 3px 3px;
+    }
+    .pc_menu_and_icon {
+      padding-top : 15px;
+    }
+    
+    .sp_navi_li{
+  width: 180px;
+  position: absolute;
+  top:70px;
+  right:2%;
+  border: 1px solid #eee;
+  background: white;
+  margin: 0;
+  padding:0;
+  display: none;
+
+  li{
+
+    list-style: none;
+    margin: 0;
+    padding:0;
+
+    a{
+      display: block;
+      padding: 6px 10px;
+      border-bottom: 1px solid #eee;
+      color: $sub-gold;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: left;
+    }
+  }
+
+    }
+  }
+}
+
+  @media (max-width: 549px) {
+    .container {
+      text-align: center;
+    }
+    
+    .pc_logo , .pc_menu_and_icon {
+      display: none;
+    }
+  }
+
+// sp
+
+
+header {
+  
+  @media (min-width: 550px) {
+    padding: 30px 0;
+      .sp_logo , .sp_icon {
+        display: none;
+      }
+      .pc_menu_and_icon {
+        text-align: right;
+          img {
+            padding-left : 7px;
+            
+          }
+      }
+  }
+}  
