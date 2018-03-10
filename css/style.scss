@@ -22,10 +22,27 @@ $key-red : #9d1a2d;
     clear: both;
 }
 
-h6 {
-  margin-top: 15px;
-  margin-bottom: 10px;
+h2 {
+  line-height: 18px; 
+  margin-bottom: 17px
+}  
+
+
+h3 {
+  @include fontsize(16);
+  letter-spacing: 0;
+  color: $sub-gold;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
+
+h4 {
+  @include fontsize(12);
+  letter-spacing: 0;
+  color: $sub-gold;
+  font-weight: 600;
+  margin-bottom: 6px;
+}  
 
 body {
   background: $background;
@@ -123,12 +140,20 @@ header {
 // carousel
 
 main {
-  section p {
+  section {
+    .section_title {
+    text-align: center;
+    }
+    p {
     @include fontsize(12);
     margin-bottom: 8px;
+    }
   }
-  .new h6 {
+  .new h5 {
     margin-top: 3px;    
+  }
+  .popular h2 {
+    margin-top: 10px;
   }
   .items {
     div {
@@ -140,17 +165,49 @@ main {
       background:white;
     }
   }
-  .shopping_guide {
+  .guide {
+    h2 {
+      margin-top: 20px 
+    }
+    img {
+      padding-bottom: 8px;
+    }
     div {
       background: white;
+      box-sizing: border-box;
+      padding: 15px 15px 20px;
+      border-bottom: 5px solid $background ;
+        span.square {
+          display: inline-block;
+          width: 9px;
+          height: 9px;
+          background: $sub-gold;
+          margin-right: 1px;
+      }
     }
   }
 }
 
+// main
 
 
-.section_title {
-  text-align: center;
+
+
+aside {
+  .item_search {
+    background: white;
+    padding: 22px 18px; 
+    margin: 10px 0;
+      .search_box {
+      background: #eee;
+      padding: 3px 8px 3px 12px;
+        span {
+          color: #b5b5b5;
+        }
+        #search_icon {
+          margin-top: 4px;
+          float: right;
+      }      
+    }
+  }
 }
-
-
