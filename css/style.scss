@@ -72,7 +72,7 @@ header {
     }
   }
 
-// sp
+// header sp
 
 
 header {
@@ -91,3 +91,25 @@ header {
       }
   }
 }  
+
+// header pc
+
+// header
+
+.owl-theme .owl-dots {
+  .owl-dot span {
+    background: $key-silver;
+    width: 25px;
+    height: 2px;
+    border-radius: 0;
+  }
+  .owl-dot.active span {
+    background: $key-red;
+  }
+}  
+
+// carousel
+
+
+
+

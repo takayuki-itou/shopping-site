@@ -48,4 +48,12 @@ header {
       header .pc_menu_and_icon img {
         padding-left: 7px; } }
 
+.owl-theme .owl-dots .owl-dot span {
+  background: #b0b0b0;
+  width: 25px;
+  height: 2px;
+  border-radius: 0; }
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #9d1a2d; }
+
 /*# sourceMappingURL=style.css.map */
