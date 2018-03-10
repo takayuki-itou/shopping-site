@@ -1,8 +1,19 @@
 html {
   font-size: 62.5%; }
 
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+h6 {
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
+body {
+  background: #f9f8f6; }
+
 header {
-  background: #f9f8f6;
   padding-top: 15px;
   padding-bottom: 5px; }
   header .menu_and_icon img {
@@ -29,31 +40,55 @@ header {
         border-bottom: 1px solid #eee;
         color: #887f69;
         font-size: 14px;
+        font-size: 1.4rem;
         text-decoration: none;
         text-align: left; }
+  @media (max-width: 549px) {
+    header {
+      text-align: center; }
+      header .pc_logo, header .pc_menu_and_icon {
+        display: none; } }
+  @media (min-width: 550px) {
+    header {
+      padding: 30px 0; }
+      header .sp_logo, header .sp_icon {
+        display: none; }
+      header .pc_menu_and_icon {
+        text-align: right; }
+        header .pc_menu_and_icon img {
+          padding-left: 7px; } }
 
-@media (max-width: 549px) {
-  .container {
-    text-align: center; }
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 0px; }
+.owl-theme .owl-dots {
+  text-align: left; }
+  .owl-theme .owl-dots .owl-dot span {
+    background: #b0b0b0;
+    width: 25px;
+    height: 2px;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 0; }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background: #9d1a2d; }
 
-  .pc_logo, .pc_menu_and_icon {
-    display: none; } }
-@media (min-width: 550px) {
-  header {
-    padding: 30px 0; }
-    header .sp_logo, header .sp_icon {
-      display: none; }
-    header .pc_menu_and_icon {
-      text-align: right; }
-      header .pc_menu_and_icon img {
-        padding-left: 7px; } }
+main section p {
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 8px; }
+main .new h6 {
+  margin-top: 3px; }
+main .items div {
+  box-sizing: border-box;
+  max-width: 50%;
+  float: left;
+  padding: 8px;
+  border: 1px solid #f9f8f6;
+  background: white; }
+main .shopping_guide div {
+  background: white; }
 
-.owl-theme .owl-dots .owl-dot span {
-  background: #b0b0b0;
-  width: 25px;
-  height: 2px;
-  border-radius: 0; }
-.owl-theme .owl-dots .owl-dot.active span {
-  background: #9d1a2d; }
+.section_title {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

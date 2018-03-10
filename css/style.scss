@@ -16,9 +16,22 @@ $background-daken : #e2ddd4;
 $key-silver : #b0b0b0;
 $key-red : #9d1a2d;
 
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h6 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+body {
+  background: $background;
+}
 
 header {
-  background: $background;
   padding-top: 15px;
   padding-bottom: 5px;
   
@@ -52,31 +65,23 @@ header {
       padding: 6px 10px;
       border-bottom: 1px solid #eee;
       color: $sub-gold;
-      font-size: 14px;
+      @include fontsize(14);
       text-decoration: none;
       text-align: left;
-    }
-  }
-
-    }
-  }
-}
+       }
+     }
+   }
+ }
 
   @media (max-width: 549px) {
-    .container {
-      text-align: center;
-    }
-    
+    text-align: center;
     .pc_logo , .pc_menu_and_icon {
-      display: none;
+    display: none;
     }
   }
 
 // header sp
 
-
-header {
-  
   @media (min-width: 550px) {
     padding: 30px 0;
       .sp_logo , .sp_icon {
@@ -86,9 +91,8 @@ header {
         text-align: right;
           img {
             padding-left : 7px;
-            
-          }
       }
+    }
   }
 }  
 
@@ -96,20 +100,57 @@ header {
 
 // header
 
-.owl-theme .owl-dots {
-  .owl-dot span {
-    background: $key-silver;
-    width: 25px;
-    height: 2px;
-    border-radius: 0;
+.owl-theme {
+  .owl-nav.disabled+.owl-dots {
+    margin-top: 0px;
   }
-  .owl-dot.active span {
-    background: $key-red;
+  .owl-dots {
+  text-align: left;
+    .owl-dot span {
+      background: $key-silver;
+      width: 25px;
+      height: 2px;
+      margin-left: 0 ;
+      margin-right: 10px;
+      border-radius: 0;
+      }
+    .owl-dot.active span {
+      background: $key-red;
+    }    
   }
 }  
 
 // carousel
 
+main {
+  section p {
+    @include fontsize(12);
+    margin-bottom: 8px;
+  }
+  .new h6 {
+    margin-top: 3px;    
+  }
+  .items {
+    div {
+      box-sizing: border-box;
+      max-width: 50%;
+      float: left;
+      padding: 8px;
+      border: 1px solid $background;
+      background:white;
+    }
+  }
+  .shopping_guide {
+    div {
+      background: white;
+    }
+  }
+}
 
+
+
+.section_title {
+  text-align: center;
+}
 
 
