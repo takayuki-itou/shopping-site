@@ -53,19 +53,20 @@ header {
   padding-top: 15px;
   padding-bottom: 5px;
   
-  .menu_and_icon {
+  .navi {
     img {
       padding: 3px 3px;
     }
-    .pc_menu_and_icon {
+    .pc_navi {
       padding-top : 15px;
     }
     
     .sp_navi_li{
-  width: 180px;
+  width: 160px;
   position: absolute;
   top:70px;
   right:2%;
+  z-index: 100;
   border: 1px solid #eee;
   background: white;
   margin: 0;
@@ -73,11 +74,10 @@ header {
   display: none;
 
   li{
-
     list-style: none;
     margin: 0;
-    padding:0;
-
+    padding: 0;
+    
     a{
       display: block;
       padding: 6px 10px;
@@ -93,19 +93,18 @@ header {
 
   @media (max-width: 549px) {
     text-align: center;
-    .pc_logo , .pc_menu_and_icon {
+    .pc_logo , .pc_navi {
     display: none;
     }
   }
-
 // header sp
 
   @media (min-width: 550px) {
     padding: 30px 0;
-      .sp_logo , .sp_icon {
+      .sp_logo, .sp_fb, .sp_insta, #sp_navi_btn {
         display: none;
       }
-      .pc_menu_and_icon {
+      .pc_navi {
         text-align: right;
           img {
             padding-left : 7px;
@@ -113,9 +112,7 @@ header {
     }
   }
 }  
-
 // header pc
-
 // header
 
 .owl-theme {
@@ -137,7 +134,6 @@ header {
     }    
   }
 }  
-
 // carousel
 
 #main {
@@ -146,7 +142,6 @@ header {
       display: -webkit-flex;
       display:         flex;
       justify-content: center;
-
       .center_line {
         display: block;
         width: 100%;
@@ -157,23 +152,19 @@ header {
         display: none;
       }
     }
-    
     img {
       margin: 0 6px;        
     }
   }
-    
     p {
       @include fontsize(12);
       margin-bottom: 8px;
     }
   }
-  
   .new {
     h2 {
       margin-top : 10px;
     }
-  
   h5 {
     margin-top: 3px;    
     }
@@ -189,17 +180,14 @@ header {
       background:white;
     }
   }
-  
   #guide {
     img {
       padding-bottom: 8px;
     }
-    
     div.flex-container {
       padding: 0;
       border-bottom: 0;
     }
-    
     div.box_1, .box_2 {
       background: white;
       box-sizing: border-box;
@@ -217,7 +205,6 @@ header {
 }
 // #main sp
 
-
 @media (min-width: 550px) {
   #main {
     section h2 {
@@ -234,23 +221,19 @@ header {
           width: 50%;
           margin-right: 3px;
       }
-        
         .box_2 {
           width: 50%;
           margin-left: 3px;
       }
-          
         .flex-container {
           display: -webkit-flex;
           display:         flex;
           justify-content: center;
-        
       }
     }
   }
 }
 //main pc
-
 
 #side_menu {
   .search {
@@ -261,7 +244,6 @@ header {
         @media (max-width: 549px) {
           display: none;
         }
-        
       }
       .search_box {
       background: #eee;
@@ -275,7 +257,6 @@ header {
       }      
     }
   }
-  
   .link, .categories, .about, .shop_info {
     background: #887f69;
     padding: 10px 15px;
@@ -287,7 +268,6 @@ header {
   margin-bottom: 2px;
   @include fontsize(12);
     }
-    
   .right {
     margin-top: 4px;
     float: right;
@@ -296,10 +276,8 @@ header {
     margin-top: 8px;
     float: right;
   }
-  
   .about_box, .info_box {
     background: white;  
-  
     .about_image, .info_image {
       box-sizing: border-box;
       padding: 10px;
@@ -308,7 +286,6 @@ header {
       float: left;
       }
     }
-      
     .contents_box {
       box-sizing: border-box;
       padding: 10px 10px 5px 0;
@@ -316,11 +293,9 @@ header {
       width: 50%;
       float: left;
       }
-      
       p {
         @include fontsize(11);  
         margin-bottom: 8px;
-        
       }  
     }
   }
@@ -332,7 +307,7 @@ header {
     .search {
       margin-top: 0;
       padding-top: 12px;
-      img.item_search{
+      img.item_search {
         margin-bottom: 4px;
       }
       .search_box {
@@ -340,6 +315,12 @@ header {
           @include fontsize(14);
         }
       }
+    }
+    .right { 
+      margin-top: 1px;
+    }
+    .pagelink {
+      margin-top: 4px;
     }
     .about_box {
       .about_image {
@@ -372,47 +353,39 @@ header {
 
 footer {
   text-align: center;
-
   @media (min-width: 550px) {
     div.page_top {
       text-align: right;
     }
   }
-  
   .page_top {
     padding: 20px 0;
     border-bottom: 1px solid $sub-gold;
     }
-    
   ul {
     list-style: none;
     margin-bottom: 0;
-    
     li {
       display: inline-block;
       margin-bottom: 0;
       @include fontsize(12);
       }
-    
     a {
       color: #222;
       text-decoration: none;
       }  
     }
-    
   .footer_navi { 
     margin: 10px 0 8px;
     }
-    
   .copy {
     @include fontsize(11);
     color: $background-daken;
-    
   }
 }
-  
 // footer
   
+
 
   
 

@@ -33,25 +33,26 @@ body {
 header {
   padding-top: 15px;
   padding-bottom: 5px; }
-  header .menu_and_icon img {
+  header .navi img {
     padding: 3px 3px; }
-  header .menu_and_icon .pc_menu_and_icon {
+  header .navi .pc_navi {
     padding-top: 15px; }
-  header .menu_and_icon .sp_navi_li {
-    width: 180px;
+  header .navi .sp_navi_li {
+    width: 160px;
     position: absolute;
     top: 70px;
     right: 2%;
+    z-index: 100;
     border: 1px solid #eee;
     background: white;
     margin: 0;
     padding: 0;
     display: none; }
-    header .menu_and_icon .sp_navi_li li {
+    header .navi .sp_navi_li li {
       list-style: none;
       margin: 0;
       padding: 0; }
-      header .menu_and_icon .sp_navi_li li a {
+      header .navi .sp_navi_li li a {
         display: block;
         padding: 6px 10px;
         border-bottom: 1px solid #eee;
@@ -63,16 +64,16 @@ header {
   @media (max-width: 549px) {
     header {
       text-align: center; }
-      header .pc_logo, header .pc_menu_and_icon {
+      header .pc_logo, header .pc_navi {
         display: none; } }
   @media (min-width: 550px) {
     header {
       padding: 30px 0; }
-      header .sp_logo, header .sp_icon {
+      header .sp_logo, header .sp_fb, header .sp_insta, header #sp_navi_btn {
         display: none; }
-      header .pc_menu_and_icon {
+      header .pc_navi {
         text-align: right; }
-        header .pc_menu_and_icon img {
+        header .pc_navi img {
           padding-left: 7px; } }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
@@ -214,6 +215,10 @@ header {
     #side_menu .search .search_box span {
       font-size: 14px;
       font-size: 1.4rem; }
+  #side_menu .right {
+    margin-top: 1px; }
+  #side_menu .pagelink {
+    margin-top: 4px; }
   #side_menu .about_box .about_image {
     padding-bottom: 5px; }
   #side_menu .about_box .contents_box {
