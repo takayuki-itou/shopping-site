@@ -8,8 +8,8 @@ html {
 
 h2 {
   line-height: 18px;
-  margin-top: 24px;
-  margin-bottom: 16px; }
+  margin-top: 20px;
+  margin-bottom: 17px; }
 
 h3 {
   font-size: 16px;
@@ -109,9 +109,11 @@ header {
   font-size: 12px;
   font-size: 1.2rem;
   margin-bottom: 8px; }
-#main .new_items h2 {
+#main .new h2 {
   margin-top: 10px; }
-#main .new_items div, #main .popular_items div, #main .recent_pro div {
+#main .new h5 {
+  margin-top: 3px; }
+#main .items div {
   box-sizing: border-box;
   width: 50%;
   float: left;
@@ -137,10 +139,10 @@ header {
 
 @media (min-width: 550px) {
   #main section h2 {
-    margin: 32px 0 24px; }
-  #main .new_items h2 {
+    margin: 27px 0 24px; }
+  #main section.new h2 {
     margin-top: 15px; }
-  #main .new_items div, #main .popular_items div, #main .recent_pro div {
+  #main section.items div {
     width: 33.33333%; }
   #main #guide .box_1 {
     width: 50%;
@@ -259,17 +261,14 @@ footer {
 
 #breadcrumbs {
   background: #e2ddd4;
-  padding: 7px 10px 6px;
+  padding: 6px 10px 6px;
   margin-bottom: 13px; }
   #breadcrumbs img {
     margin-right: 4px; }
   #breadcrumbs p {
-    display: inline;
     color: #887f69;
-    font-size: 11px;
-    font-size: 1.1rem;
-    margin-bottom: 100px;
-    vertical-align: 1px; }
+    font-size: 15px;
+    font-size: 1.5rem; }
 
 @media (max-width: 549px) {
   .catefory_image .category_img-pc {
@@ -278,31 +277,4 @@ footer {
   .catefory_image .category_img-sp {
     display: none; } }
 
-#main .item_list .item_box {
-  box-sizing: border-box;
-  width: 50%;
-  float: left;
-  padding: 8px;
-  border: 1px solid #f9f8f6;
-  background: white; }
-  @media (min-width: 550px) {
-    #main .item_list .item_box {
-      width: 33.33333%; } }
-#main .item_list .btn_area {
-  padding: 23px 0 8px; }
-  #main .item_list .btn_area span.back_btn {
-    color: white;
-    font-size: 13px;
-    font-size: 1.3rem;
-    padding: 8px 38px 6px;
-    background: #887f69;
-    float: left; }
-  #main .item_list .btn_area span.next_btn {
-    color: white;
-    font-size: 13px;
-    font-size: 1.3rem;
-    padding: 7px 38px;
-    background: #887f69;
-    float: right; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css].map */
