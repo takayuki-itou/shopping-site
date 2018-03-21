@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>作成中 Shopping-site Top</title>
+  <title>作成中 Shopping-site Product-details</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -16,16 +16,16 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- skeleton CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/style.css">
-
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <!-- 自前 CSS -->
+  <link rel="stylesheet" href="css/style.css">
   <!-- jQuery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!-- Owl Carousel JS -->
@@ -36,16 +36,286 @@
       <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
- 
-
-
 </head>
 <body>
-    
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="five columns logo">
+          <img class="sp_logo u-max-full-width" src="images/top_sp/logo.png" alt="APPLE BERRY" srcset="images/top_sp/logo@2x.png 2x">
+          <img class="pc_logo u-max-full-width" src="images/top/logo.png" alt="APPLE BERRY" srcset="images/top/logo@2x.png 2x">  
+        </div>
+        <div class="seven columns navi">
+          <div class="sp_navi">
+            <img class="sp_fb u-max-full-width" src="images/top_sp/fb.png" alt="fb" srcset="images/top_sp/fb@2x.png 2x">
+            <img class="sp_insta u-max-full-width" src="images/top_sp/insta.png" alt="insta" srcset="images/top_sp/insta@2x.png 2x">
+            <img id="sp_navi_btn" class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png 2x">
+            <ul class="sp_navi_li">
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">CART</a></li>
+              <li><a href="#">MY PAGE</a></li>
+              <li><a href="#">SHOPPING GUIDE</a></li>
+            </ul>
+          </div>
+          <div class="pc_navi">
+            <a href=""><img class="u-max-full-width" src="images/top/menu_login.png" alt="LOGIN"></a>
+            <a href=""><img class="u-max-full-width" src="images/top/menu_cart.png" alt="CART"></a>
+            <a href=""><img class="u-max-full-width" src="images/top/menu_mypage.png" alt="MY PAGE"></a>
+            <a href=""><img class="u-max-full-width" src="images/top/menu_guide.png" alt="SHOPPING GUIDE"></a>
+            <a href=""><img class="u-max-full-width" src="images/top/facebook.png" alt="MY PAGE"></a>
+            <a href=""><img class="u-max-full-width" src="images/top/insta.png" alt="SHOPPING GUIDE"></a>
+          </div>          
+        </div>  
+      </div>
+    </div>
+  </header>
 
-    
 
+  <div class="container max-width_549px width_100percent">  
+    <div class="row">
+      <div id="main" class="nine columns">
+        
+        <div class="container min_width_550px width_100percent">
+          <section id="breadcrumbs">                    <!-- #breadcrumbs -->
+            <img src="images/list/home_icon.png" alt="HOME">
+            <p>HOME / カテゴリー名 / 商品名</p>
+          </section> <!-- #breadcrumbs -->
+        </div>
+        
+        <div class="back_white">
+          <div class="container min_width_550px width_100percent">
+            <section id="pro_details">                  <!-- pro_details -->
+              
+              <div class="pro_name">
+                <div>商品名が入ります</div>
+                <span>fa0001-91</span>
+              </div>
 
+              <div class="flex-container"> 
+                <div id="display_img">
+                  <img class="u-full-width" src="images/products/pro_img_01.jpg" alt="selected item">
+                </div>  
 
+                <ul id="list_img">
+                  <li><img class="u-full-width" src="images/products/pro_img_01.jpg" alt="img 01"></li>
+                  <li><img class="u-full-width" src="images/products/pro_img_02.jpg" alt="img 01"></li>
+                  <li><img class="u-full-width" src="images/products/pro_img_03.jpg" alt="img 03"></li>
+                  <li><img class="u-full-width" src="images/products/pro_img_04.jpg" alt="img 04"></li>
+                  <li><img class="u-full-width" src="images/products/pro_img_05.jpg" alt="img 05"></li>
+                  <li><img class="u-full-width" src="images/products/gray_pro_img.jpg" alt="img 06"></li>
+                  <li><img class="u-full-width" src="images/products/gray_pro_img.jpg" alt="img 07"></li>
+                  <li><img class="u-full-width" src="images/products/gray_pro_img.jpg" alt="img 08"></li>
+                  <li><img class="u-full-width" src="images/products/gray_pro_img.jpg" alt="img 09"></li>
+                  <li><img class="u-full-width" src="images/products/gray_pro_img.jpg" alt="img 10"></li>
+                </ul>
+              </div>
+              <div class="color_and_size">
+                <h2><img src="images/products/title_color.png" alt="COLOR / SIZE"></h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>カラー１</th>
+                      <th>カラー１</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>サイズ</td>
+                      <td><span class="check_box"></span></td>
+                      <td><span class="check_box"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="price_and_quantity">
+                <div class="price clearfix">
+                  <h2><img src="images/products/title_price.png" alt="PRICE"></h2>
+                  <div><span class="¥">￥</span><span class="number">1,000 </span><span class="tax">(tax in)</span></div>
+                </div>
+                <div class="quantity clearfix">
+                  <h2><img src="images/products/title_quantity.png" alt="Quantity"></h2>
+                  <div><span class="quantity_box"></span></div>
+                </div>
+              </div>
+              <div class="cart">
+                <img class="u-max-full-width" src="images/products/add_to_cart.png" alt="Add TO CART">
+              </div>
+              
+              <div class="discription">
+                <h3>商品説明</h3>
+                <h4><span class="square"></span>説明タイトル説明タイトル説明タイトル説明タイトル</h4>
+                <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>カラー</th>
+                      <th>説明分が入ります説明分が入ります</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>サイズ</td>
+                      <td>説明分が入ります説明分が入ります</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+            </section> <!-- pro_details -->
+          </div> <!-- div.container -->
+        </div> <!-- back_white -->    
+      
+        <div class="container min_width_550px width_100percent">
+          <section id="recent_pro" class="clearfix">             <!-- recent_pro -->
+            <h2 class="section_title"><span class="center_line"></span><img class="u-max-full-width" src="images/list/title_recent_pro.png" alt="最近みた商品" srcset="images/list/title_recent_pro@2x.png 2x"><span class="center_line"></span></h2>
+            <div>
+              <img class="u-full-width" src="images/top/item_07.jpg" alt="item 07">
+              <p>商品名が入ります商品名が入ります商品名が入ります</p>
+              <p>¥10,000（tax in）</p>
+            </div>
+            <div>
+              <img class="u-full-width" src="images/top/item_08.jpg" alt="item 08">
+              <p>商品名が入ります商品名が入ります商品名が入ります</p>
+              <p>¥10,000（tax in）</p>
+            </div>
+            <div>
+              <img class="u-full-width" src="images/top/item_09.jpg" alt="item 09">
+              <p>商品名が入ります商品名が入ります商品名が入ります</p>
+              <p>¥10,000（tax in）</p>
+            </div>
+          </section> <!-- recent_pro -->
+          <section id="guide">                                   <!-- #guide -->
+            <h2 class="section_title"><span class="center_line"></span><img class="u-max-full-width sectiion_title" src="images/top_sp/title_guide.png" alt="SHOPPING GUIDE" srcset="images/top_sp/title_guide@2x.png 2x"><span class="center_line"></span></h2>
+            <div class="flex-container">
+              <div class="box_1">
+                <h3>お届けについて</h3>
+                <img class="u-max-full-width truck" src="images/top/otodoke_banner.png" alt="お届けについて">
+                <h4><span class="square"></span>◯◯運輸</h4>
+                <p>送料 ¥000 円</p>
+                <h4><span class="square"></span>ゆうパケット</h4>
+                <p>ポスト投函となります。日時指定不可</p>
+              </div>
+              <div class="box_2">
+                <h3>決済について</h3>
+                <h4><span class="square"></span>カード決済</h4>
+                <img class="u-max-full-width" src="images/top/cards.png" alt="カード">
+                <h4><span class="square"></span>代金引換</h4>
+                <p>代引き手数料が別途かかります</p>
+                <h4><span class="square"></span>︎銀行振込</h4>
+                <p>お振込手数料お客様負担。<br>ご入金後の発送となります。</p>
+              </div>
+            </div>
+          </section> <!-- #guide -->
+        </div> <!-- div.container -->
+      </div>  <!-- nine columns -->
+
+      <div id="side_menu" class="three columns">                 <!--side_menu -->
+        <div class="container min_width_550px width_100percent">
+          <div class="search">
+            <img class="item_search u-max-full-width" src="images/top/itemserch.png" alt="ITEM SEARCH">
+            <div class="search_box clearfix">
+              <span>Search..</span>
+              <img class="search_icon" src="images/top/search_icon.png" alt="search">
+            </div>
+          </div>
+          <div class="link clearfix">
+            <img class="u-max-full-width" src="images/top/pagelink.png" alt="ページリンク">
+            ︎<img src="images/top/next_icon.png " class="right pagelink" alt="➡︎︎">
+          </div>
+          <div class="categories clearfix">
+            <img class="u-max-full-width" src=" images/top/categories.png" alt="CATEGORIES">
+            <img src="images/top/down_icon.png" class="below" alt="⬇︎">
+          </div>
+          <div class="category_name clearfix">
+            <span>カテゴリー名</span>
+            <img src="images/top/next_icon_gray.png" class="right" alt="➡︎︎">
+          </div>
+          <div class="category_name clearfix">
+            <span>カテゴリー名</span>
+            <img src="images/top/next_icon_gray.png" class="right" alt="➡︎︎">
+          </div>
+          <div class="category_name clearfix">
+            <span>カテゴリー名</span>
+            <img src="images/top/next_icon_gray.png" class="right" alt="➡︎︎">
+          </div>
+          <div class="category_name clearfix">
+            <span>カテゴリー名</span>
+            <img src="images/top/next_icon_gray.png" class="right" alt="➡︎︎">
+          </div>
+          <div class="category_name clearfix">
+            <span>カテゴリー名</span>
+            <img src="images/top/next_icon_gray.png" class="right" alt="➡︎︎">
+          </div>
+          <div class="about">
+            <img src="images/top/about.png" alt="ABOUT">
+          </div>
+          <div class="about_box clearfix">
+            <div class="about_image">
+              <img class="u-max-full-width" src="images/top/about_img.jpg" alt="image">
+            </div>
+            <div class="contents_box">
+              <p>お店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入ります</p>
+              <div class="btn_more">
+                <a href="#"><img class="u-max-full-width" src="images/top/more_btn.png" alt="MORE"></a>
+              </div>
+            </div>
+          </div>
+          <div class="shop_info">
+            <img src="images/top/shop_info.png" alt="SHOP INFO">
+          </div>
+          <div class="info_box clearfix">
+            <div class="info_image">
+              <img class="u-max-full-width" src="images/top/shopinfo_img.jpg" alt="image">
+            </div>
+            <div class="contents_box">
+              <p>お店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入ります</p>
+              <div class="btn_more">
+                <a href="#"><img class="u-max-full-width" src="images/top/more_btn.png" alt="MORE"></a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- div.container -->
+      </div>   <!-- #side_menu threecolumns -->
+    </div>     <!-- row -->
+  </div>       <!-- container -->
+  <footer>
+    <div class="container">
+      <div class=row>
+        <div class="twelve column"> 
+          <div class="page_top">
+            <a href=""><img src="images/top/pagetop.png" alt="PAGE TOP"></a>
+          </div>
+          <div class="footer_navi">  
+            <ul>  
+              <li><a href="">特定商取引に基づく表記</a></li>
+              <li><a href="">・プライバシーポリシー</a></li>
+              <li><a href="">・マイページ</a></li>
+            </ul>
+          </div>
+          <p class="copy">copyright (C) APPLE BERRY all rights reserved.</p>
+        </div>  <!-- twelve column -->
+      </div>    <!-- row -->
+    </div>      <!-- container -->
+  </footer>
+  <script>
+  $(function(){
+    $(document).ready(function(){
+      $("#sp_navi_btn").click(function () {
+        $(this).next().slideToggle();
+      });
+    });
+  });
+  </script>
+  <script>
+    $(window).load(function(){
+  $("#list_img img").click(function(){
+    var img_src = $(this).attr("src");
+    $("#display_img img").attr("src", img_src);
+  });
+});
+  </script>
 </body>
 </html>
+
