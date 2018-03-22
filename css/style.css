@@ -489,11 +489,11 @@ section#breadcrumbs {
     #main .back_white #pro_details .cart img {
       margin-top: 0; } }
 @media (max-width: 549px) {
-  #clear_padding_max549 {
+  .clear_padding_max549 {
     width: 100%;
     padding: 0; } }
 @media (min-width: 550px) {
-  #clear_margin_min550 {
+  .clear_margin_min550 {
     max-width: 100%;
     width: 100%; } }
 

@@ -637,6 +637,7 @@ section#breadcrumbs {
 
 @media (min-width: 550px) {
   #main {
+
     .back_white {
       #pro_details {
         .pro_name {
@@ -653,9 +654,9 @@ section#breadcrumbs {
             flex: 2 2 ;
             box-sizing: border-box;
             margin: 0 0 0 8px;
-          @include display-flex;     // サムネイルをflex
-          @include justify-content(space-between); // 最初と最後のアイテムは端に、残りは等間隔で配置 (cf.space-around)
-          @include flex-wrap(wrap); //行の折り返しあり (cf.nowrap)
+            @include display-flex;     // サムネイルをflex
+            @include justify-content(space-between); // 最初と最後のアイテムは端に、残りは等間隔で配置 (cf.space-around)
+            @include flex-wrap(wrap); //行の折り返しあり (cf.nowrap)
             li {
               box-sizing: border-box;
               width: calc( ( 100% - 8px ) / 2 );
@@ -695,22 +696,27 @@ section#breadcrumbs {
 }
 
 @media (max-width: 549px) {
-  #clear_padding_max549 {
+  .clear_padding_max549 {
     width: 100%;
     padding:0;
   }
 }
 
 @media (min-width: 550px) {
-  #clear_margin_min550 {
+  .clear_margin_min550
+     {
     max-width: 100%;
     width: 100%;
-  }
+    }
 }
+
+
+
+
+
 // details pc
 // details
 
 
-
-
+// @media (min-width: 550px) {  #clear_margin_min550 {    max-width: 100%;    width: 100%;  }}
 
