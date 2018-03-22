@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>作成中 Shopping-site Product-details</title>
+  <title>Shopping-site Product-details</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -69,33 +69,26 @@
       </div>
     </div>
   </header>
-
-
-  <div class="container max-width_549px width_100percent">  
+  <div class="container" id="clear_padding_max549"> <!-- 549px以下ではpadding:0 width:100%、550px以上はskeletonの指定に従う -->  
     <div class="row">
       <div id="main" class="nine columns">
-        
-        <div class="container min_width_550px width_100percent">
-          <section id="breadcrumbs">                    <!-- #breadcrumbs -->
+        <div class="container" id="clear_margin_min550"> <!--549pxまではskeletonの指定に従い、550px以上ではwidth100% -->
+          <section id="breadcrumbs">                     <!-- #breadcrumbs -->
             <img src="images/list/home_icon.png" alt="HOME">
             <p>HOME / カテゴリー名 / 商品名</p>
           </section> <!-- #breadcrumbs -->
         </div>
-        
         <div class="back_white">
-          <div class="container min_width_550px width_100percent">
+          <div class="container">
             <section id="pro_details">                  <!-- pro_details -->
-              
               <div class="pro_name">
                 <div>商品名が入ります</div>
                 <span>fa0001-91</span>
               </div>
-
               <div class="flex-container"> 
                 <div id="display_img">
                   <img class="u-full-width" src="images/products/pro_img_01.jpg" alt="selected item">
                 </div>  
-
                 <ul id="list_img">
                   <li><img class="u-full-width" src="images/products/pro_img_01.jpg" alt="img 01"></li>
                   <li><img class="u-full-width" src="images/products/pro_img_02.jpg" alt="img 01"></li>
@@ -128,21 +121,21 @@
                   </tbody>
                 </table>
               </div>
-              
-              <div class="price_and_quantity">
-                <div class="price clearfix">
-                  <h2><img src="images/products/title_price.png" alt="PRICE"></h2>
-                  <div><span class="¥">￥</span><span class="number">1,000 </span><span class="tax">(tax in)</span></div>
+              <div class="clearfix">
+                <div class="price_and_quantity">
+                  <div class="price clearfix">
+                    <h2><img class="u-max-full-width" src="images/products/title_price.png" alt="PRICE"></h2>
+                    <div><span class="¥">￥</span><span class="number">1,000 </span><span class="tax">(tax in)</span></div>
+                  </div>
+                  <div class="quantity clearfix">
+                    <h2><img class="u-max-full-width" src="images/products/title_quantity.png" alt="Quantity"></h2>
+                    <div><span class="quantity_box"></span></div>
+                  </div>
                 </div>
-                <div class="quantity clearfix">
-                  <h2><img src="images/products/title_quantity.png" alt="Quantity"></h2>
-                  <div><span class="quantity_box"></span></div>
+                <div class="cart">
+                  <img class="u-max-full-width" src="images/products/add_to_cart.png" alt="Add TO CART">
                 </div>
               </div>
-              <div class="cart">
-                <img class="u-max-full-width" src="images/products/add_to_cart.png" alt="Add TO CART">
-              </div>
-              
               <div class="discription">
                 <h3>商品説明</h3>
                 <h4><span class="square"></span>説明タイトル説明タイトル説明タイトル説明タイトル</h4>
@@ -162,12 +155,10 @@
                   </tbody>
                 </table>
               </div>
-              
             </section> <!-- pro_details -->
-          </div> <!-- div.container -->
+          </div>  
         </div> <!-- back_white -->    
-      
-        <div class="container min_width_550px width_100percent">
+        <div class="container" id="clear_margin_min550"> <!-- 549pxまではskeletonの指定に従い、550px以上ではwidth100% -->
           <section id="recent_pro" class="clearfix">             <!-- recent_pro -->
             <h2 class="section_title"><span class="center_line"></span><img class="u-max-full-width" src="images/list/title_recent_pro.png" alt="最近みた商品" srcset="images/list/title_recent_pro@2x.png 2x"><span class="center_line"></span></h2>
             <div>
@@ -208,11 +199,10 @@
               </div>
             </div>
           </section> <!-- #guide -->
-        </div> <!-- div.container -->
+        </div>
       </div>  <!-- nine columns -->
-
       <div id="side_menu" class="three columns">                 <!--side_menu -->
-        <div class="container min_width_550px width_100percent">
+        <div class="container" id="clear_margin_min550"> <!-- 549pxまではskeletonの指定に従い、550px以上ではwidth100% -->
           <div class="search">
             <img class="item_search u-max-full-width" src="images/top/itemserch.png" alt="ITEM SEARCH">
             <div class="search_box clearfix">
@@ -276,10 +266,10 @@
               </div>
             </div>
           </div>
-        </div> <!-- div.container -->
+        </div>
       </div>   <!-- #side_menu threecolumns -->
     </div>     <!-- row -->
-  </div>       <!-- container -->
+  </div>       <!-- 549px以下ではpadding:0 width:100% -->
   <footer>
     <div class="container">
       <div class=row>
@@ -310,11 +300,11 @@
   </script>
   <script>
     $(window).load(function(){
-  $("#list_img img").click(function(){
-    var img_src = $(this).attr("src");
-    $("#display_img img").attr("src", img_src);
+      $("#list_img img").click(function(){
+       var img_src = $(this).attr("src");
+       $("#display_img img").attr("src", img_src);
+    });
   });
-});
   </script>
 </body>
 </html>

@@ -498,6 +498,7 @@ section#breadcrumbs {
           }
           img {
           display: block;
+          cursor: pointer;
         }
       }
     }
@@ -541,7 +542,6 @@ section#breadcrumbs {
             margin: 13px 0;
             float: left;
           }
-        
         div {
           width: 80%;
           margin-top: 8px;
@@ -555,24 +555,23 @@ section#breadcrumbs {
             .number {
               @include fontsize(24);
               color: #e80f66;
-            }
+          }
         }
       }
     }
       .quantity {
         border-top: solid 1px $background-daken;
         margin-bottom: 4px;
+        @include display-flex;
+        @include justify-content(space-between); 
         h2 {
           margin: 15px 0;
-          width: 25%;
-          float: left;
-
+          width: 32%;
         }
         div {
           text-align: center;
-          width: 75%;     
+          width: 68%;     
           margin-top: 12px;
-          float: right;
         }
           .quantity_box {
             display: inline-block;
@@ -608,7 +607,6 @@ section#breadcrumbs {
             margin-right: 2px;
         }
       }
-    
       p {
         margin-bottom : 20px;
       }
@@ -616,15 +614,12 @@ section#breadcrumbs {
         width: 100%;
         border: solid 1px $background-daken;
         margin-bottom: 30px;
-      
         th, td {
           padding: 8px 7px 4px;
           border: solid 1px $background-daken;
-          
           @include fontsize(12);
           font-weight: 400;
           color: $sub-gold;
-          
             &:first-child {
               background: $background;
               text-align: center;
@@ -648,19 +643,50 @@ section#breadcrumbs {
           margin-bottom: 20px;
         }
         .flex-container {
-          @include display-flex;    // イメージ大とサムネイルをflex
-          @include justify-content(space-between); // 最初と最後のアイテムは端に、残りは等間隔で配置 (cf.space-around)
-          @include flex-wrap(wrap); //行の折り返しあり (cf.nowrap)
+          @include display-flex;     // イメージ大とサムネイルをflex
+          margin-bottom:20px;
+
           #display_img {
-            flex: 5 5 20px;
+            flex: 5 5 ;
           }
           #list_img {
-            flex: 2 2 5px;
+            flex: 2 2 ;
             box-sizing: border-box;
-            margin: 0;
+            margin: 0 0 0 8px;
+          @include display-flex;     // サムネイルをflex
+          @include justify-content(space-between); // 最初と最後のアイテムは端に、残りは等間隔で配置 (cf.space-around)
+          @include flex-wrap(wrap); //行の折り返しあり (cf.nowrap)
             li {
-              width: calc( ( 100% - 5px ) / 2 )
+              box-sizing: border-box;
+              width: calc( ( 100% - 8px ) / 2 );
+              margin: 0;
+                &:nth-child(n+3) {
+                  padding-top: 5px;  // 高さを一度整えておけば、その比率で拡大縮小してくれるみたい
+              }
             }
+          } 
+        }
+        .color_and_size {
+          table {
+            margin-bottom: 16px;
+          }
+        }
+          .price_and_quantity {
+            width: 56%;
+            float: left;
+            .quantity {
+              .quantity_box {
+                width: 75%;
+              }
+            }
+          }
+          .cart {
+            width: 40%;
+            border-top: none;
+            text-align: right;
+            float: right;
+            img {
+              margin-top: 0;
           }
         }
       }
@@ -668,37 +694,22 @@ section#breadcrumbs {
   }
 }
 
-
-
-
-
 @media (max-width: 549px) {
-  .max-width_549px {
+  #clear_padding_max549 {
     width: 100%;
     padding:0;
   }
 }
 
-
-
 @media (min-width: 550px) {
-  .min_width_550px {
+  #clear_margin_min550 {
     max-width: 100%;
     width: 100%;
   }
 }
+// details pc
+// details
 
-
-
-
-
-
-
-
-
-
-
-// test ↓↓↓-----------
 
 
 
